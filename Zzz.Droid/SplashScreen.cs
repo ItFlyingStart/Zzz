@@ -7,7 +7,7 @@ namespace Zzz.Droid
     [Activity(
         MainLauncher = true,
         Label = "@string/ApplicationName",
-        Theme = "@style/Theme.Splash", NoHistory = true,
+        Theme = "@android:style/Theme.Material", NoHistory = true,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
         ScreenOrientation = ScreenOrientation.Portrait)]
     public class SplashScreen : MvxSplashScreenActivity
