@@ -52,23 +52,23 @@ namespace Zzz.Droid.Activities
 
             SetContentView(Resource.Layout.MainView);
 
-            listView = FindViewById<ListView>(Resource.Id.list);
+            //listView = FindViewById<ListView>(Resource.Id.list);
 
-            tableItems.Add(new TableItem() { Heading = "Bol.com", SubHeading = "Web shop", ImageResourceId = Resource.Drawable.computer });
-            tableItems.Add(new TableItem() { Heading = "Marlink", SubHeading = "Domain login", ImageResourceId = Resource.Drawable.shopcart });
+            //tableItems.Add(new TableItem() { Heading = "Bol.com", SubHeading = "Web shop", ImageResourceId = Resource.Drawable.computer });
+            //tableItems.Add(new TableItem() { Heading = "Marlink", SubHeading = "Domain login", ImageResourceId = Resource.Drawable.shopcart });
 
-            listView.Adapter = new OverviewListAdapter(this, tableItems);
+            //listView.Adapter = new OverviewListAdapter(this, tableItems);
 
-            listView.ItemClick += OnListItemClick;
+            //listView.ItemClick += OnListItemClick;
         }
 
-        protected void OnListItemClick(object sender, Android.Widget.AdapterView.ItemClickEventArgs e)
-        {
-            var listView = sender as ListView;
-            var t = tableItems[e.Position];
-            Android.Widget.Toast.MakeText(this, t.Heading, Android.Widget.ToastLength.Short).Show();
-            Console.WriteLine("Clicked on " + t.Heading);
-        }
+        //protected void OnListItemClick(object sender, Android.Widget.AdapterView.ItemClickEventArgs e)
+        //{
+        //    var listView = sender as ListView;
+        //    var t = tableItems[e.Position];
+        //    Android.Widget.Toast.MakeText(this, t.Heading, Android.Widget.ToastLength.Short).Show();
+        //    Console.WriteLine("Clicked on " + t.Heading);
+        //}
     }
 }
 

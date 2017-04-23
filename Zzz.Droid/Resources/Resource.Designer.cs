@@ -1190,44 +1190,44 @@ namespace Zzz.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f07004a
-			public const int abc_background_cache_hint_selector_material_dark = 2131165258;
+			// aapt resource value: 0x7f070054
+			public const int abc_background_cache_hint_selector_material_dark = 2131165268;
 			
-			// aapt resource value: 0x7f07004b
-			public const int abc_background_cache_hint_selector_material_light = 2131165259;
+			// aapt resource value: 0x7f070055
+			public const int abc_background_cache_hint_selector_material_light = 2131165269;
 			
-			// aapt resource value: 0x7f07004c
-			public const int abc_btn_colored_borderless_text_material = 2131165260;
+			// aapt resource value: 0x7f070056
+			public const int abc_btn_colored_borderless_text_material = 2131165270;
 			
-			// aapt resource value: 0x7f07004d
-			public const int abc_btn_colored_text_material = 2131165261;
+			// aapt resource value: 0x7f070057
+			public const int abc_btn_colored_text_material = 2131165271;
 			
-			// aapt resource value: 0x7f07004e
-			public const int abc_color_highlight_material = 2131165262;
+			// aapt resource value: 0x7f070058
+			public const int abc_color_highlight_material = 2131165272;
 			
-			// aapt resource value: 0x7f07004f
-			public const int abc_hint_foreground_material_dark = 2131165263;
+			// aapt resource value: 0x7f070059
+			public const int abc_hint_foreground_material_dark = 2131165273;
 			
-			// aapt resource value: 0x7f070050
-			public const int abc_hint_foreground_material_light = 2131165264;
+			// aapt resource value: 0x7f07005a
+			public const int abc_hint_foreground_material_light = 2131165274;
 			
 			// aapt resource value: 0x7f070010
 			public const int abc_input_method_navigation_guard = 2131165200;
 			
-			// aapt resource value: 0x7f070051
-			public const int abc_primary_text_disable_only_material_dark = 2131165265;
+			// aapt resource value: 0x7f07005b
+			public const int abc_primary_text_disable_only_material_dark = 2131165275;
 			
-			// aapt resource value: 0x7f070052
-			public const int abc_primary_text_disable_only_material_light = 2131165266;
+			// aapt resource value: 0x7f07005c
+			public const int abc_primary_text_disable_only_material_light = 2131165276;
 			
-			// aapt resource value: 0x7f070053
-			public const int abc_primary_text_material_dark = 2131165267;
+			// aapt resource value: 0x7f07005d
+			public const int abc_primary_text_material_dark = 2131165277;
 			
-			// aapt resource value: 0x7f070054
-			public const int abc_primary_text_material_light = 2131165268;
+			// aapt resource value: 0x7f07005e
+			public const int abc_primary_text_material_light = 2131165278;
 			
-			// aapt resource value: 0x7f070055
-			public const int abc_search_url_text = 2131165269;
+			// aapt resource value: 0x7f07005f
+			public const int abc_search_url_text = 2131165279;
 			
 			// aapt resource value: 0x7f070011
 			public const int abc_search_url_text_normal = 2131165201;
@@ -1238,32 +1238,38 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f070013
 			public const int abc_search_url_text_selected = 2131165203;
 			
-			// aapt resource value: 0x7f070056
-			public const int abc_secondary_text_material_dark = 2131165270;
+			// aapt resource value: 0x7f070060
+			public const int abc_secondary_text_material_dark = 2131165280;
 			
-			// aapt resource value: 0x7f070057
-			public const int abc_secondary_text_material_light = 2131165271;
+			// aapt resource value: 0x7f070061
+			public const int abc_secondary_text_material_light = 2131165281;
 			
-			// aapt resource value: 0x7f070058
-			public const int abc_tint_btn_checkable = 2131165272;
+			// aapt resource value: 0x7f070062
+			public const int abc_tint_btn_checkable = 2131165282;
 			
-			// aapt resource value: 0x7f070059
-			public const int abc_tint_default = 2131165273;
+			// aapt resource value: 0x7f070063
+			public const int abc_tint_default = 2131165283;
 			
-			// aapt resource value: 0x7f07005a
-			public const int abc_tint_edittext = 2131165274;
+			// aapt resource value: 0x7f070064
+			public const int abc_tint_edittext = 2131165284;
 			
-			// aapt resource value: 0x7f07005b
-			public const int abc_tint_seek_thumb = 2131165275;
+			// aapt resource value: 0x7f070065
+			public const int abc_tint_seek_thumb = 2131165285;
 			
-			// aapt resource value: 0x7f07005c
-			public const int abc_tint_spinner = 2131165276;
+			// aapt resource value: 0x7f070066
+			public const int abc_tint_spinner = 2131165286;
 			
-			// aapt resource value: 0x7f07005d
-			public const int abc_tint_switch_thumb = 2131165277;
+			// aapt resource value: 0x7f070067
+			public const int abc_tint_switch_thumb = 2131165287;
 			
-			// aapt resource value: 0x7f07005e
-			public const int abc_tint_switch_track = 2131165278;
+			// aapt resource value: 0x7f070068
+			public const int abc_tint_switch_track = 2131165288;
+			
+			// aapt resource value: 0x7f07004e
+			public const int accent = 2131165262;
+			
+			// aapt resource value: 0x7f07004f
+			public const int accentDark = 2131165263;
 			
 			// aapt resource value: 0x7f070014
 			public const int accent_material_dark = 2131165204;
@@ -1282,6 +1288,9 @@ namespace Zzz.Droid
 			
 			// aapt resource value: 0x7f070019
 			public const int background_material_light = 2131165209;
+			
+			// aapt resource value: 0x7f07004b
+			public const int black = 2131165259;
 			
 			// aapt resource value: 0x7f07001a
 			public const int bright_foreground_disabled_material_dark = 2131165210;
@@ -1319,11 +1328,14 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f070003
 			public const int cardview_shadow_start_color = 2131165187;
 			
+			// aapt resource value: 0x7f070050
+			public const int darkGray = 2131165264;
+			
 			// aapt resource value: 0x7f070004
 			public const int design_bottom_navigation_shadow_color = 2131165188;
 			
-			// aapt resource value: 0x7f07005f
-			public const int design_error = 2131165279;
+			// aapt resource value: 0x7f070069
+			public const int design_error = 2131165289;
 			
 			// aapt resource value: 0x7f070005
 			public const int design_fab_shadow_end_color = 2131165189;
@@ -1355,8 +1367,8 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f07000e
 			public const int design_textinput_error_color_light = 2131165198;
 			
-			// aapt resource value: 0x7f070060
-			public const int design_tint_password_toggle = 2131165280;
+			// aapt resource value: 0x7f07006a
+			public const int design_tint_password_toggle = 2131165290;
 			
 			// aapt resource value: 0x7f070022
 			public const int dim_foreground_disabled_material_dark = 2131165218;
@@ -1381,6 +1393,9 @@ namespace Zzz.Droid
 			
 			// aapt resource value: 0x7f070029
 			public const int highlighted_text_material_light = 2131165225;
+			
+			// aapt resource value: 0x7f070052
+			public const int lightGray = 2131165266;
 			
 			// aapt resource value: 0x7f07002a
 			public const int material_blue_grey_800 = 2131165226;
@@ -1418,6 +1433,9 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f070035
 			public const int material_grey_900 = 2131165237;
 			
+			// aapt resource value: 0x7f070051
+			public const int normal_text = 2131165265;
+			
 			// aapt resource value: 0x7f07000f
 			public const int notification_action_color_filter = 2131165199;
 			
@@ -1426,6 +1444,12 @@ namespace Zzz.Droid
 			
 			// aapt resource value: 0x7f070037
 			public const int notification_material_background_media_default_color = 2131165239;
+			
+			// aapt resource value: 0x7f07004c
+			public const int primary = 2131165260;
+			
+			// aapt resource value: 0x7f07004d
+			public const int primaryDark = 2131165261;
 			
 			// aapt resource value: 0x7f070038
 			public const int primary_dark_material_dark = 2131165240;
@@ -1475,17 +1499,23 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f070047
 			public const int switch_thumb_disabled_material_light = 2131165255;
 			
-			// aapt resource value: 0x7f070061
-			public const int switch_thumb_material_dark = 2131165281;
+			// aapt resource value: 0x7f07006b
+			public const int switch_thumb_material_dark = 2131165291;
 			
-			// aapt resource value: 0x7f070062
-			public const int switch_thumb_material_light = 2131165282;
+			// aapt resource value: 0x7f07006c
+			public const int switch_thumb_material_light = 2131165292;
 			
 			// aapt resource value: 0x7f070048
 			public const int switch_thumb_normal_material_dark = 2131165256;
 			
 			// aapt resource value: 0x7f070049
 			public const int switch_thumb_normal_material_light = 2131165257;
+			
+			// aapt resource value: 0x7f070053
+			public const int transparent = 2131165267;
+			
+			// aapt resource value: 0x7f07004a
+			public const int white = 2131165258;
 			
 			static Color()
 			{
@@ -2297,8 +2327,8 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a0010
 			public const int MvxBindingTagUnique = 2131361808;
 			
-			// aapt resource value: 0x7f0a0088
-			public const int action0 = 2131361928;
+			// aapt resource value: 0x7f0a008b
+			public const int action0 = 2131361931;
 			
 			// aapt resource value: 0x7f0a0066
 			public const int action_bar = 2131361894;
@@ -2321,17 +2351,17 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a0043
 			public const int action_bar_title = 2131361859;
 			
-			// aapt resource value: 0x7f0a0085
-			public const int action_container = 2131361925;
+			// aapt resource value: 0x7f0a0088
+			public const int action_container = 2131361928;
 			
 			// aapt resource value: 0x7f0a0067
 			public const int action_context_bar = 2131361895;
 			
-			// aapt resource value: 0x7f0a008c
-			public const int action_divider = 2131361932;
+			// aapt resource value: 0x7f0a008f
+			public const int action_divider = 2131361935;
 			
-			// aapt resource value: 0x7f0a0086
-			public const int action_image = 2131361926;
+			// aapt resource value: 0x7f0a0089
+			public const int action_image = 2131361929;
 			
 			// aapt resource value: 0x7f0a0005
 			public const int action_menu_divider = 2131361797;
@@ -2348,11 +2378,11 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a0045
 			public const int action_mode_close_button = 2131361861;
 			
-			// aapt resource value: 0x7f0a0087
-			public const int action_text = 2131361927;
+			// aapt resource value: 0x7f0a008a
+			public const int action_text = 2131361930;
 			
-			// aapt resource value: 0x7f0a0095
-			public const int actions = 2131361941;
+			// aapt resource value: 0x7f0a0098
+			public const int actions = 2131361944;
 			
 			// aapt resource value: 0x7f0a0046
 			public const int activity_chooser_view_content = 2131361862;
@@ -2381,8 +2411,8 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a004d
 			public const int buttonPanel = 2131361869;
 			
-			// aapt resource value: 0x7f0a0089
-			public const int cancel_action = 2131361929;
+			// aapt resource value: 0x7f0a008c
+			public const int cancel_action = 2131361932;
 			
 			// aapt resource value: 0x7f0a0018
 			public const int center = 2131361816;
@@ -2396,8 +2426,8 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a005d
 			public const int checkbox = 2131361885;
 			
-			// aapt resource value: 0x7f0a0091
-			public const int chronometer = 2131361937;
+			// aapt resource value: 0x7f0a0094
+			public const int chronometer = 2131361940;
 			
 			// aapt resource value: 0x7f0a0024
 			public const int clip_horizontal = 2131361828;
@@ -2410,6 +2440,9 @@ namespace Zzz.Droid
 			
 			// aapt resource value: 0x7f0a0050
 			public const int contentPanel = 2131361872;
+			
+			// aapt resource value: 0x7f0a0086
+			public const int content_frame = 2131361926;
 			
 			// aapt resource value: 0x7f0a0057
 			public const int custom = 2131361879;
@@ -2441,14 +2474,17 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a0034
 			public const int disableHome = 2131361844;
 			
+			// aapt resource value: 0x7f0a0084
+			public const int drawer_layout = 2131361924;
+			
 			// aapt resource value: 0x7f0a0068
 			public const int edit_query = 2131361896;
 			
 			// aapt resource value: 0x7f0a001b
 			public const int end = 2131361819;
 			
-			// aapt resource value: 0x7f0a009b
-			public const int end_padder = 2131361947;
+			// aapt resource value: 0x7f0a009e
+			public const int end_padder = 2131361950;
 			
 			// aapt resource value: 0x7f0a0011
 			public const int enterAlways = 2131361809;
@@ -2486,8 +2522,8 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a004b
 			public const int icon = 2131361867;
 			
-			// aapt resource value: 0x7f0a0096
-			public const int icon_group = 2131361942;
+			// aapt resource value: 0x7f0a0099
+			public const int icon_group = 2131361945;
 			
 			// aapt resource value: 0x7f0a0040
 			public const int ifRoom = 2131361856;
@@ -2495,8 +2531,8 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a0048
 			public const int image = 2131361864;
 			
-			// aapt resource value: 0x7f0a0092
-			public const int info = 2131361938;
+			// aapt resource value: 0x7f0a0095
+			public const int info = 2131361941;
 			
 			// aapt resource value: 0x7f0a0083
 			public const int itemDescription = 2131361923;
@@ -2516,14 +2552,17 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a001d
 			public const int left = 2131361821;
 			
-			// aapt resource value: 0x7f0a0097
-			public const int line1 = 2131361943;
+			// aapt resource value: 0x7f0a0087
+			public const int left_drawer = 2131361927;
 			
-			// aapt resource value: 0x7f0a0099
-			public const int line3 = 2131361945;
+			// aapt resource value: 0x7f0a009a
+			public const int line1 = 2131361946;
 			
-			// aapt resource value: 0x7f0a0084
-			public const int list = 2131361924;
+			// aapt resource value: 0x7f0a009c
+			public const int line3 = 2131361948;
+			
+			// aapt resource value: 0x7f0a009f
+			public const int list = 2131361951;
 			
 			// aapt resource value: 0x7f0a0032
 			public const int listMode = 2131361842;
@@ -2531,11 +2570,11 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a004a
 			public const int list_item = 2131361866;
 			
-			// aapt resource value: 0x7f0a009e
-			public const int masked = 2131361950;
+			// aapt resource value: 0x7f0a00a3
+			public const int masked = 2131361955;
 			
-			// aapt resource value: 0x7f0a008b
-			public const int media_actions = 2131361931;
+			// aapt resource value: 0x7f0a008e
+			public const int media_actions = 2131361934;
 			
 			// aapt resource value: 0x7f0a003d
 			public const int middle = 2131361853;
@@ -2558,14 +2597,14 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a002a
 			public const int normal = 2131361834;
 			
-			// aapt resource value: 0x7f0a0094
-			public const int notification_background = 2131361940;
+			// aapt resource value: 0x7f0a0097
+			public const int notification_background = 2131361943;
 			
-			// aapt resource value: 0x7f0a008e
-			public const int notification_main_column = 2131361934;
+			// aapt resource value: 0x7f0a0091
+			public const int notification_main_column = 2131361937;
 			
-			// aapt resource value: 0x7f0a008d
-			public const int notification_main_column_container = 2131361933;
+			// aapt resource value: 0x7f0a0090
+			public const int notification_main_column_container = 2131361936;
 			
 			// aapt resource value: 0x7f0a0022
 			public const int parallax = 2131361826;
@@ -2588,11 +2627,11 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a001e
 			public const int right = 2131361822;
 			
-			// aapt resource value: 0x7f0a0093
-			public const int right_icon = 2131361939;
+			// aapt resource value: 0x7f0a0096
+			public const int right_icon = 2131361942;
 			
-			// aapt resource value: 0x7f0a008f
-			public const int right_side = 2131361935;
+			// aapt resource value: 0x7f0a0092
+			public const int right_side = 2131361938;
 			
 			// aapt resource value: 0x7f0a002e
 			public const int screen = 2131361838;
@@ -2687,8 +2726,8 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a001f
 			public const int start = 2131361823;
 			
-			// aapt resource value: 0x7f0a008a
-			public const int status_bar_latest_event_content = 2131361930;
+			// aapt resource value: 0x7f0a008d
+			public const int status_bar_latest_event_content = 2131361933;
 			
 			// aapt resource value: 0x7f0a0060
 			public const int submenuarrow = 2131361888;
@@ -2699,11 +2738,11 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a0033
 			public const int tabMode = 2131361843;
 			
-			// aapt resource value: 0x7f0a009a
-			public const int text = 2131361946;
+			// aapt resource value: 0x7f0a009d
+			public const int text = 2131361949;
 			
-			// aapt resource value: 0x7f0a0098
-			public const int text2 = 2131361944;
+			// aapt resource value: 0x7f0a009b
+			public const int text2 = 2131361947;
 			
 			// aapt resource value: 0x7f0a0054
 			public const int textSpacerNoButtons = 2131361876;
@@ -2711,8 +2750,8 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a0053
 			public const int textSpacerNoTitle = 2131361875;
 			
-			// aapt resource value: 0x7f0a009c
-			public const int textView1 = 2131361948;
+			// aapt resource value: 0x7f0a00a0
+			public const int textView1 = 2131361952;
 			
 			// aapt resource value: 0x7f0a0080
 			public const int text_input_password_toggle = 2131361920;
@@ -2723,8 +2762,8 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a0001
 			public const int textinput_error = 2131361793;
 			
-			// aapt resource value: 0x7f0a0090
-			public const int time = 2131361936;
+			// aapt resource value: 0x7f0a0093
+			public const int time = 2131361939;
 			
 			// aapt resource value: 0x7f0a004c
 			public const int title = 2131361868;
@@ -2734,6 +2773,12 @@ namespace Zzz.Droid
 			
 			// aapt resource value: 0x7f0a0059
 			public const int title_template = 2131361881;
+			
+			// aapt resource value: 0x7f0a0085
+			public const int toolbar = 2131361925;
+			
+			// aapt resource value: 0x7f0a00a1
+			public const int toolbar_title = 2131361953;
 			
 			// aapt resource value: 0x7f0a0020
 			public const int top = 2131361824;
@@ -2759,8 +2804,8 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a0002
 			public const int view_offset_helper = 2131361794;
 			
-			// aapt resource value: 0x7f0a009d
-			public const int visible = 2131361949;
+			// aapt resource value: 0x7f0a00a2
+			public const int visible = 2131361954;
 			
 			// aapt resource value: 0x7f0a0042
 			public const int withText = 2131361858;
@@ -2996,19 +3041,28 @@ namespace Zzz.Droid
 			public const int notification_template_part_time = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int select_dialog_item_material = 2130903098;
+			public const int PasswordOverviewView = 2130903098;
 			
 			// aapt resource value: 0x7f03003b
-			public const int select_dialog_multichoice_material = 2130903099;
+			public const int SearchPassword = 2130903099;
 			
 			// aapt resource value: 0x7f03003c
-			public const int select_dialog_singlechoice_material = 2130903100;
+			public const int select_dialog_item_material = 2130903100;
 			
 			// aapt resource value: 0x7f03003d
-			public const int SplashScreen = 2130903101;
+			public const int select_dialog_multichoice_material = 2130903101;
 			
 			// aapt resource value: 0x7f03003e
-			public const int support_simple_spinner_dropdown_item = 2130903102;
+			public const int select_dialog_singlechoice_material = 2130903102;
+			
+			// aapt resource value: 0x7f03003f
+			public const int SplashScreen = 2130903103;
+			
+			// aapt resource value: 0x7f030040
+			public const int support_simple_spinner_dropdown_item = 2130903104;
+			
+			// aapt resource value: 0x7f030041
+			public const int toolbar = 2130903105;
 			
 			static Layout()
 			{
