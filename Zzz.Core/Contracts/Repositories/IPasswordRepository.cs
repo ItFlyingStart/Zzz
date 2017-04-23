@@ -8,6 +8,6 @@ namespace Zzz.Core.Contracts.Repositories
     {
         Task<List<Password>> GetAllPasswords();
 
-        Task<Password> GetPasswordById(int passwordId);
+        Task<Password> GetPasswordById(string passwordId);
     }
 }

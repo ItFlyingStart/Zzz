@@ -19,7 +19,7 @@ namespace Zzz.Core.Services.Data
             return await _passwordRepository.GetAllPasswords();
         }
 
-        public async Task<Password> GetPasswordById(int passwordId)
+        public async Task<Password> GetPasswordById(string passwordId)
         {
             return await _passwordRepository.GetPasswordById(passwordId);
         }

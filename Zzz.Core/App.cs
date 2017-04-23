@@ -4,6 +4,9 @@ using MvvmCross.Platform;
 using MvvmCross.Platform.IoC;
 using Zzz.Core.Utility;
 using Zzz.Localization;
+using ExpressMapper;
+using Zzz.Core.Models;
+using Zzz.Core.Models.Orm;
 
 namespace Zzz.Core
 {
@@ -26,7 +29,14 @@ namespace Zzz.Core
             Mvx.RegisterSingleton<IMvxTextProvider>
                 (new ResxTextProvider(Strings.ResourceManager));
 
+            MappingRegistration();
+
             RegisterAppStart(new AppStart());
+        }
+
+        private void MappingRegistration()
+        {
+            Mapper.Register<PasswordOrm, Password>();
         }
     }
 }

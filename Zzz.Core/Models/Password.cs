@@ -1,8 +1,14 @@
-﻿namespace Zzz.Core.Models
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Zzz.Core.Models
 {
-    public class Password: BaseModel
+    public class Password
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         public string Name { get; set; }
 

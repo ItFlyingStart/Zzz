@@ -7,13 +7,18 @@ namespace Zzz.Core.ViewModels
 {
     public class MainViewModel : MvxViewModel, IMainViewModel
     {
-        private readonly Lazy<SearchPasswordViewModel> _searchPasswordViewModel;
+        private readonly Lazy<PasswordOverviewViewModel> _passwordOverviewViewModel;
 
-        public SearchPasswordViewModel SearchPasswordViewModel => _searchPasswordViewModel.Value;
+        public PasswordOverviewViewModel PasswordOverviewViewModel => _passwordOverviewViewModel.Value;
 
         public MainViewModel()
         {
-            _searchPasswordViewModel = new Lazy<SearchPasswordViewModel>(Mvx.IocConstruct<SearchPasswordViewModel>);
+            _passwordOverviewViewModel = new Lazy<PasswordOverviewViewModel>(Mvx.IocConstruct<PasswordOverviewViewModel>);
+        }
+
+        public void ShowPasswordOverview()
+        {
+            ShowViewModel<PasswordOverviewViewModel>();
         }
     }
 }

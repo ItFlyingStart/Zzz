@@ -4,35 +4,39 @@ using System.Linq;
 using System.Threading.Tasks;
 using Zzz.Core.Contracts.Repositories;
 using Zzz.Core.Models;
+using Zzz.Core.Models.Orm;
+using Realms;
+using ExpressMapper;
+using ExpressMapper.Extensions;
 
 namespace Zzz.Core.Repositories
 {
     public class PasswordRepository : BaseRepository, IPasswordRepository
     {
-        private static readonly List<Password> AllPasswords = new List<Password>
+        DatabaseHelper dbHelper;
+
+        public PasswordRepository()
         {
-            new Password
-            {
-                Id = 1,
-                Name = "Outlook",
-                Description = "Outlook password"
-            },
-            new Password
-            {
-                Id = 2,
-                Name = "Bol.com",
-                Description = "Bol.com password"
-            }
-        };
+            dbHelper = new DatabaseHelper();
+
+            // TO BE REMOVED.
+            dbHelper.GenerateFakeData();
+        }
 
         public async Task<List<Password>> GetAllPasswords()
         {
-            return await Task.FromResult(AllPasswords);
+            List<PasswordOrm> allPasswordOrms = dbHelper.GetAllPasswords();
+            List<Password> result = allPasswordOrms.Map<List<PasswordOrm>, List<Password>>();
+
+            return await Task.FromResult(result);
         }
 
-        public async Task<Password> GetPasswordById(int passwordId)
+        public async Task<Password> GetPasswordById(string passwordId)
         {
-            return await Task.FromResult(AllPasswords.FirstOrDefault(c => c.Id == passwordId));
+            PasswordOrm passwordOrm = dbHelper.GetPassword(passwordId);
+            Password result = passwordOrm.Map<PasswordOrm, Password>();
+
+            return await Task.FromResult(result);
         }
     }
 }
