@@ -11,14 +11,20 @@ namespace Zzz.Core.ViewModels
 
         public PasswordOverviewViewModel PasswordOverviewViewModel => _passwordOverviewViewModel.Value;
 
+        //private readonly Lazy<TestViewModel> _testViewModel;
+
+        //public TestViewModel TestViewModel => _testViewModel.Value;
+
         public MainViewModel()
         {
             _passwordOverviewViewModel = new Lazy<PasswordOverviewViewModel>(Mvx.IocConstruct<PasswordOverviewViewModel>);
+            //_testViewModel = new Lazy<TestViewModel>(Mvx.IocConstruct<TestViewModel>);
         }
 
         public void ShowPasswordOverview()
         {
             ShowViewModel<PasswordOverviewViewModel>();
+            //ShowViewModel<TestViewModel>();
         }
     }
 }

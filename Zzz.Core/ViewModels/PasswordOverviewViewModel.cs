@@ -8,6 +8,9 @@ using Zzz.Core.Contracts.ViewModels;
 using Zzz.Core.Extensions;
 using Zzz.Core.Models;
 using Zzz.Core.Models.App;
+using Zzz.Core.Services.General;
+using Zzz.Core.Services.Data;
+using Zzz.Core.Repositories;
 
 namespace Zzz.Core.ViewModels
 {
@@ -28,14 +31,20 @@ namespace Zzz.Core.ViewModels
             }
         }
 
-        public PasswordOverviewViewModel(IMvxMessenger messenger
-            , IPasswordDataService passwordDataService
-            , IConnectionService connectionService
-            , IDialogService dialogService) : base(messenger)
+        //public PasswordOverviewViewModel(IMvxMessenger messenger
+        //    , IPasswordDataService passwordDataService
+        //    , IConnectionService connectionService
+        //    , IDialogService dialogService) : base(messenger)
+        //{
+        //    _passwordDataService = passwordDataService;
+        //    _connectionService = connectionService;
+        //    _dialogService = dialogService;
+        //}
+
+        public PasswordOverviewViewModel(IMvxMessenger messenger) : base(messenger)
         {
-            _passwordDataService = passwordDataService;
-            _connectionService = connectionService;
-            _dialogService = dialogService;
+            _passwordDataService = new PasswordDataService(new PasswordRepository());
+            _connectionService = new ConnectionService();
         }
 
         public override async void Start()
@@ -49,14 +58,16 @@ namespace Zzz.Core.ViewModels
         {
             await base.InitializeAsync();
 
-            if (_connectionService.CheckOnline())
-            {
-                await LoadPasswords();
-            }
-            else
-            {
-                await _dialogService.ShowAlertAsync("No internet available", "Zzz...", "OK");
-            }
+            await LoadPasswords();
+
+            //if (_connectionService.CheckOnline())
+            //{
+            //    await LoadPasswords();
+            //}
+            //else
+            //{
+            //    await _dialogService.ShowAlertAsync("No internet available", "Zzz...", "OK");
+            //}
         }
 
         internal async Task LoadPasswords()

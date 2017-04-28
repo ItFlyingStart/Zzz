@@ -35,9 +35,9 @@ namespace Zzz.Droid.Adapters
             View view = convertView;
             if (view == null) // no view to re-use, create new
                 view = context.LayoutInflater.Inflate(Resource.Layout.ListViewWithIconTemplate, null);
-            view.FindViewById<TextView>(Resource.Id.itemName).Text = item.Heading;
-            view.FindViewById<TextView>(Resource.Id.itemDescription).Text = item.SubHeading;
-            view.FindViewById<ImageView>(Resource.Id.itemIcon).SetImageResource(item.ImageResourceId);
+            //view.FindViewById<TextView>(Resource.Id.itemName).Text = item.Heading;
+            //view.FindViewById<TextView>(Resource.Id.itemDescription).Text = item.SubHeading;
+            //view.FindViewById<ImageView>(Resource.Id.itemIcon).SetImageResource(item.ImageResourceId);
             return view;
         }
     }

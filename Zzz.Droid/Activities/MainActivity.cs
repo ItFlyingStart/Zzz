@@ -52,6 +52,8 @@ namespace Zzz.Droid.Activities
 
             SetContentView(Resource.Layout.MainView);
 
+            ViewModel.ShowPasswordOverview();
+
             //listView = FindViewById<ListView>(Resource.Id.list);
 
             //tableItems.Add(new TableItem() { Heading = "Bol.com", SubHeading = "Web shop", ImageResourceId = Resource.Drawable.computer });
