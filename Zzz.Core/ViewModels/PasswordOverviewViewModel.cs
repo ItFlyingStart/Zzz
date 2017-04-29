@@ -74,5 +74,17 @@ namespace Zzz.Core.ViewModels
         {
             AllPasswords = (await _passwordDataService.GetAllPasswords()).ToObservableCollection();
         }
+
+        public IMvxCommand ShowPasswordDetailsCommand
+        {
+            get
+            {
+                return new MvxCommand<Password>(selectedPassword =>
+                {
+                    ShowViewModel<PasswordDetailViewModel>
+                    (new { passwordId = selectedPassword.Id });
+                });
+            }
+        }
     }
 }

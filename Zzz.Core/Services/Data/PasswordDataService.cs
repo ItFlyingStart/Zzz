@@ -23,5 +23,15 @@ namespace Zzz.Core.Services.Data
         {
             return await _passwordRepository.GetPasswordById(passwordId);
         }
+
+        public virtual async Task<List<Group>> GetAllGroups()
+        {
+            return await _passwordRepository.GetAllGroups();
+        }
+
+        public async Task<Group> GetGroupById(string groupId)
+        {
+            return await _passwordRepository.GetGroupById(groupId);
+        }
     }
 }

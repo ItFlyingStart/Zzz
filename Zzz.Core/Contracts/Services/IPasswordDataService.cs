@@ -9,5 +9,9 @@ namespace Zzz.Core.Contracts.Services
         Task<List<Password>> GetAllPasswords();
 
         Task<Password> GetPasswordById(string passwordId);
+
+        Task<List<Group>> GetAllGroups();
+
+        Task<Group> GetGroupById(string groupId);
     }
 }

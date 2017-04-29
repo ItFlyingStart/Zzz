@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Zzz.Core.Models
 {
-    public class Password
+    public class Group
     {
         public string Id { get; set; }
 
@@ -14,15 +14,6 @@ namespace Zzz.Core.Models
 
         public string Description { get; set; }
 
-        public string AccessAddress { get; set; }
-
-        public string Notes { get; set; }
-
-        public Group PasswordGroup { get; set; }
-
-        public override string ToString()
-        {
-            return Name;
-        }
+        public int IconId { get; set; }
     }
 }

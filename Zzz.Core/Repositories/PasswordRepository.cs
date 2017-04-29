@@ -23,10 +23,26 @@ namespace Zzz.Core.Repositories
             dbHelper.GenerateFakeData();
         }
 
+        public async Task<List<Group>> GetAllGroups()
+        {
+            List<GroupOrm> allGroupOrms = dbHelper.GetAllGroups();
+            List<Group> result = allGroupOrms.Map<List<GroupOrm>, List<Group>>();
+
+            return await Task.FromResult(result);
+        }
+
         public async Task<List<Password>> GetAllPasswords()
         {
             List<PasswordOrm> allPasswordOrms = dbHelper.GetAllPasswords();
             List<Password> result = allPasswordOrms.Map<List<PasswordOrm>, List<Password>>();
+
+            return await Task.FromResult(result);
+        }
+
+        public async Task<Group> GetGroupById(string groupId)
+        {
+            GroupOrm groupOrm = dbHelper.GetGroup(groupId);
+            Group result = groupOrm.Map<GroupOrm, Group>();
 
             return await Task.FromResult(result);
         }

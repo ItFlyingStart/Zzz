@@ -37,6 +37,7 @@ namespace Zzz.Core
         private void MappingRegistration()
         {
             Mapper.Register<PasswordOrm, Password>();
+            Mapper.Register<GroupOrm, Group>();
         }
     }
 }

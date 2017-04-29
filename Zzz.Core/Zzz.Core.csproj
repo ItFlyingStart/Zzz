@@ -49,6 +49,7 @@
     <Compile Include="Models\App\MenuItem.cs" />
     <Compile Include="Models\App\SearchParameters.cs" />
     <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\Group.cs" />
     <Compile Include="Models\Orm\GroupOrm.cs" />
     <Compile Include="Models\Orm\PasswordOrm.cs" />
     <Compile Include="Models\Password.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\PasswordOverviewViewModel.cs" />
     <Compile Include="ViewModels\SearchPasswordViewModel.cs" />
+    <Compile Include="ViewModels\PasswordDetailViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ExpressMapper, Version=1.9.0.0, Culture=neutral, PublicKeyToken=ac363faa09311ba0, processorArchitecture=MSIL">

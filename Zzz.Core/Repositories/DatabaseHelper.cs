@@ -14,7 +14,19 @@ namespace Zzz.Core.Repositories
 
         public DatabaseHelper()
         {
-            realm = Realm.GetInstance();
+            try
+            {
+                RealmConfiguration configuration = new RealmConfiguration()
+                {
+                    ShouldDeleteIfMigrationNeeded = true
+                };
+
+                realm = Realm.GetInstance(configuration);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         #region Password
@@ -63,6 +75,10 @@ namespace Zzz.Core.Repositories
 
         public void GenerateFakeData()
         {
+            // Delete all objects in database.
+            //CleanDatabase();
+
+            // Create fake data for testing.
             GroupOrm groupEmail = null;
             GroupOrm groupWebShop = null;
             if (GetAllGroups().Count < 1)
@@ -90,6 +106,14 @@ namespace Zzz.Core.Repositories
                     }
                 );
             }
+        }
+
+        private void CleanDatabase()
+        {
+            realm.Write(() =>
+            {
+                realm.RemoveAll();
+            });
         }
     }
 }

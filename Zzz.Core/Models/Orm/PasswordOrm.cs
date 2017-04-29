@@ -11,6 +11,10 @@ namespace Zzz.Core.Models.Orm
 
         public string Description { get; set; }
 
+        public string AccessAddress { get; set; }
+
+        public string Notes { get; set; }
+
         public GroupOrm PasswordGroup { get; set; }
     }
 }
