@@ -51,7 +51,7 @@ namespace Zzz.Core.Repositories
         }
         #endregion
 
-        #region Password
+        #region Group
         public List<GroupOrm> GetAllGroups()
         {
             List<GroupOrm> allGroups = new List<GroupOrm>(realm.All<GroupOrm>());
@@ -60,7 +60,13 @@ namespace Zzz.Core.Repositories
 
         public GroupOrm GetGroup(string id)
         {
-            GroupOrm group = (GroupOrm)realm.All<GroupOrm>().Where(p => p.Id == id);
+            GroupOrm group = (GroupOrm)realm.All<GroupOrm>().Where(p => p.Id == id).First();
+            return group;
+        }
+
+        public GroupOrm GetGroupByName(string name)
+        {
+            GroupOrm group = (GroupOrm)realm.All<GroupOrm>().Where(p => p.Name == name).First();
             return group;
         }
 

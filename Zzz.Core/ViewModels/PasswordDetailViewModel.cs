@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Collections.ObjectModel;
 using System.Text;
 using System.Threading.Tasks;
 using MvvmCross.Plugins.Messenger;
@@ -9,7 +10,7 @@ using Zzz.Core.Contracts.ViewModels;
 using Zzz.Core.Models;
 using Zzz.Core.Services.Data;
 using Zzz.Core.Repositories;
-using System.Collections.ObjectModel;
+using Zzz.Core.Extensions;
 
 namespace Zzz.Core.ViewModels
 {
@@ -17,8 +18,8 @@ namespace Zzz.Core.ViewModels
     {
         private readonly IPasswordDataService _passwordDataService;
         private Password _selectedPassword;
-        private Group _selectedGroup;
-        private Collection<Group> _allGroups;
+        //private Group _selectedGroup;
+        private ObservableCollection<Group> _allGroups;
         private string _passwordId;
 
         public Password SelectedPassword
@@ -33,17 +34,25 @@ namespace Zzz.Core.ViewModels
 
         public Group SelectedGroup
         {
-            get { return _selectedGroup; }
+            get
+            {
+                return SelectedPassword.PasswordGroup;
+            }
             set
             {
-                _selectedGroup = value;
+                SelectedPassword.PasswordGroup = value;
                 RaisePropertyChanged(() => SelectedGroup);
             }
         }
 
-        public Collection<Group> AllGroups
+        public ObservableCollection<Group> AllGroups
         {
             get { return _allGroups; }
+            set
+            {
+                _allGroups = value;
+                RaisePropertyChanged(() => AllGroups);
+            }
         }
 
         public PasswordDetailViewModel(IMvxMessenger messenger) : base(messenger)
@@ -71,10 +80,17 @@ namespace Zzz.Core.ViewModels
         protected override async Task InitializeAsync()
         {
             SelectedPassword = await _passwordDataService.GetPasswordById(_passwordId);
+            await LoadGroups();
+
             if (SelectedPassword != null)
             {
                 SelectedGroup = await _passwordDataService.GetGroupById(SelectedPassword.PasswordGroup.Id);
             }
+        }
+
+        internal async Task LoadGroups()
+        {
+            AllGroups = (await _passwordDataService.GetAllGroups()).ToObservableCollection();
         }
     }
 }

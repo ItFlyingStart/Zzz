@@ -47,6 +47,14 @@ namespace Zzz.Core.Repositories
             return await Task.FromResult(result);
         }
 
+        public async Task<Group> GetGroupByName(string groupName)
+        {
+            GroupOrm groupOrm = dbHelper.GetGroupByName(groupName);
+            Group result = groupOrm.Map<GroupOrm, Group>();
+
+            return await Task.FromResult(result);
+        }
+
         public async Task<Password> GetPasswordById(string passwordId)
         {
             PasswordOrm passwordOrm = dbHelper.GetPassword(passwordId);

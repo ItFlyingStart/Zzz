@@ -13,5 +13,7 @@ namespace Zzz.Core.Contracts.Services
         Task<List<Group>> GetAllGroups();
 
         Task<Group> GetGroupById(string groupId);
+
+        Task<Group> GetGroupByName(string groupName);
     }
 }

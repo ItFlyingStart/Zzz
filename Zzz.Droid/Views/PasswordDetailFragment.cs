@@ -1,14 +1,15 @@
-using System;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
-using Android.Widget;
 using MvvmCross.Droid.Shared.Attributes;
 using MvvmCross.Binding.Droid.BindingContext;
+using MvvmCross.Droid.Support.V4;
+using MvvmCross.Binding.Droid.Views;
 using Zzz.Core.ViewModels;
+using Zzz.Core.Models;
 using Zzz.Droid.Activities;
 using Zzz.Droid.Extensions;
-using MvvmCross.Droid.Support.V4;
+using MvvmCross.Droid.Support.V7.AppCompat.Widget;
 
 namespace Zzz.Droid.Views
 {
@@ -19,7 +20,27 @@ namespace Zzz.Droid.Views
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreateView(inflater, container, savedInstanceState);
-            return this.BindingInflate(Resource.Layout.PasswordDetailView, null);
+            View passwordDetailView = this.BindingInflate(Resource.Layout.PasswordDetailView, null);
+
+            PasswordDetailViewModel passwordDetailViewModel = (PasswordDetailViewModel)ViewModel;
+            if (passwordDetailViewModel.SelectedPassword != null)
+            {
+                var groupSpinner = passwordDetailView.FindViewById<MvxAppCompatSpinner>(Resource.Id.drpGroup);
+                int itemPosition = 0;
+                string selectedGroupId = passwordDetailViewModel.SelectedGroup.Id;
+                foreach (Group group in passwordDetailViewModel.AllGroups)
+                {
+                    if (group.Id == selectedGroupId)
+                    {
+                        groupSpinner.SetSelection(itemPosition);
+                        break;
+                    }
+                    itemPosition++;
+                }
+            }
+
+            return passwordDetailView;
+
         }
 
         public override void OnViewCreated(View view, Bundle savedInstanceState)

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Zzz.Core.Contracts.Repositories;
 using Zzz.Core.Contracts.Services;
@@ -32,6 +33,11 @@ namespace Zzz.Core.Services.Data
         public async Task<Group> GetGroupById(string groupId)
         {
             return await _passwordRepository.GetGroupById(groupId);
+        }
+
+        public async Task<Group> GetGroupByName(string groupName)
+        {
+            return await _passwordRepository.GetGroupByName(groupName);
         }
     }
 }
