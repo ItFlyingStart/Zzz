@@ -44,10 +44,17 @@ namespace Zzz.Core.Repositories
 
         public void UpdatePassword(PasswordOrm password)
         {
-            realm.Write(() =>
+            try
             {
-                realm.Add(password);
-            });
+                realm.Write(() =>
+                {
+                    realm.Add(password, true);
+                });
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         #endregion
 

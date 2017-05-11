@@ -62,5 +62,13 @@ namespace Zzz.Core.Repositories
 
             return await Task.FromResult(result);
         }
+
+        public async Task<Password> SavePassword(Password password)
+        {
+            PasswordOrm passwordOrm = password.Map<Password, PasswordOrm>();
+            dbHelper.UpdatePassword(passwordOrm);
+
+            return await Task.FromResult(password);
+        }
     }
 }

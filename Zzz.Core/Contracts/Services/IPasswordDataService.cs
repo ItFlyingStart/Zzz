@@ -15,5 +15,7 @@ namespace Zzz.Core.Contracts.Services
         Task<Group> GetGroupById(string groupId);
 
         Task<Group> GetGroupByName(string groupName);
+
+        Task<Password> SavePassword(Password password);
     }
 }

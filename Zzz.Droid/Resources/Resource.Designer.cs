@@ -2408,6 +2408,12 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a0017
 			public const int bottom = 2131361815;
 			
+			// aapt resource value: 0x7f0a00aa
+			public const int btnCancel = 2131361962;
+			
+			// aapt resource value: 0x7f0a00a9
+			public const int btnSave = 2131361961;
+			
 			// aapt resource value: 0x7f0a004d
 			public const int buttonPanel = 2131361869;
 			
@@ -2579,8 +2585,8 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a009c
 			public const int line3 = 2131361948;
 			
-			// aapt resource value: 0x7f0a00a9
-			public const int list = 2131361961;
+			// aapt resource value: 0x7f0a00ab
+			public const int list = 2131361963;
 			
 			// aapt resource value: 0x7f0a0032
 			public const int listMode = 2131361842;
@@ -2588,8 +2594,8 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a004a
 			public const int list_item = 2131361866;
 			
-			// aapt resource value: 0x7f0a00ad
-			public const int masked = 2131361965;
+			// aapt resource value: 0x7f0a00af
+			public const int masked = 2131361967;
 			
 			// aapt resource value: 0x7f0a008e
 			public const int media_actions = 2131361934;
@@ -2768,8 +2774,8 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a0053
 			public const int textSpacerNoTitle = 2131361875;
 			
-			// aapt resource value: 0x7f0a00aa
-			public const int textView1 = 2131361962;
+			// aapt resource value: 0x7f0a00ac
+			public const int textView1 = 2131361964;
 			
 			// aapt resource value: 0x7f0a0080
 			public const int text_input_password_toggle = 2131361920;
@@ -2795,8 +2801,8 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a0085
 			public const int toolbar = 2131361925;
 			
-			// aapt resource value: 0x7f0a00ab
-			public const int toolbar_title = 2131361963;
+			// aapt resource value: 0x7f0a00ad
+			public const int toolbar_title = 2131361965;
 			
 			// aapt resource value: 0x7f0a0020
 			public const int top = 2131361824;
@@ -2834,8 +2840,8 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a0002
 			public const int view_offset_helper = 2131361794;
 			
-			// aapt resource value: 0x7f0a00ac
-			public const int visible = 2131361964;
+			// aapt resource value: 0x7f0a00ae
+			public const int visible = 2131361966;
 			
 			// aapt resource value: 0x7f0a0042
 			public const int withText = 2131361858;

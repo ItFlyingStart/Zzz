@@ -20,6 +20,7 @@ namespace Zzz.Core.ViewModels
         private readonly IConnectionService _connectionService;
         private readonly IDialogService _dialogService;
         private ObservableCollection<Password> _allPasswords;
+        private bool _reloadData;
 
         public ObservableCollection<Password> AllPasswords
         {
@@ -45,6 +46,11 @@ namespace Zzz.Core.ViewModels
         {
             _passwordDataService = new PasswordDataService(new PasswordRepository());
             _connectionService = new ConnectionService();
+        }
+
+        public void Init(bool reloadData = false)
+        {
+            _reloadData = reloadData;
         }
 
         public override async void Start()

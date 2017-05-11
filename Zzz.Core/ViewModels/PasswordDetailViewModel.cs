@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Collections.ObjectModel;
-using System.Text;
+﻿using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using MvvmCross.Plugins.Messenger;
+using MvvmCross.Core.ViewModels;
 using Zzz.Core.Contracts.Services;
 using Zzz.Core.Contracts.ViewModels;
 using Zzz.Core.Models;
@@ -18,7 +15,6 @@ namespace Zzz.Core.ViewModels
     {
         private readonly IPasswordDataService _passwordDataService;
         private Password _selectedPassword;
-        //private Group _selectedGroup;
         private ObservableCollection<Group> _allGroups;
         private string _passwordId;
 
@@ -80,6 +76,7 @@ namespace Zzz.Core.ViewModels
         protected override async Task InitializeAsync()
         {
             SelectedPassword = await _passwordDataService.GetPasswordById(_passwordId);
+
             await LoadGroups();
 
             if (SelectedPassword != null)
@@ -91,6 +88,28 @@ namespace Zzz.Core.ViewModels
         internal async Task LoadGroups()
         {
             AllGroups = (await _passwordDataService.GetAllGroups()).ToObservableCollection();
+        }
+
+        public IMvxCommand SaveCommand
+        {
+            get
+            {
+                return new MvxCommand(SavePassword);
+            }
+        }
+
+        public IMvxCommand CancelCommand
+        {
+            get
+            {
+                return new MvxCommand(() => ShowViewModel<PasswordOverviewViewModel>());
+            }
+        }
+
+        private async void SavePassword()
+        {
+            Password password = await _passwordDataService.SavePassword(SelectedPassword);
+            ShowViewModel<PasswordOverviewViewModel>(new { reloadData = true });
         }
     }
 }
