@@ -2426,14 +2426,29 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a0087
 			public const int btnCancel = 2131361927;
 			
+			// aapt resource value: 0x7f0a00b4
+			public const int btnRegenerate = 2131361972;
+			
 			// aapt resource value: 0x7f0a0086
 			public const int btnSave = 2131361926;
+			
+			// aapt resource value: 0x7f0a00b5
+			public const int btnSelect = 2131361973;
 			
 			// aapt resource value: 0x7f0a004d
 			public const int buttonPanel = 2131361869;
 			
 			// aapt resource value: 0x7f0a0094
 			public const int cancel_action = 2131361940;
+			
+			// aapt resource value: 0x7f0a00af
+			public const int cbIncludeCharacter = 2131361967;
+			
+			// aapt resource value: 0x7f0a00b0
+			public const int cbIncludeNumber = 2131361968;
+			
+			// aapt resource value: 0x7f0a00b1
+			public const int cbIncludeSpecialCharacter = 2131361969;
 			
 			// aapt resource value: 0x7f0a0018
 			public const int center = 2131361816;
@@ -2579,6 +2594,9 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a0084
 			public const int lblDescription = 2131361924;
 			
+			// aapt resource value: 0x7f0a00b2
+			public const int lblGeneratedPasswordPreview = 2131361970;
+			
 			// aapt resource value: 0x7f0a00aa
 			public const int lblGroup = 2131361962;
 			
@@ -2612,8 +2630,8 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a004a
 			public const int list_item = 2131361866;
 			
-			// aapt resource value: 0x7f0a00b1
-			public const int masked = 2131361969;
+			// aapt resource value: 0x7f0a00b9
+			public const int masked = 2131361977;
 			
 			// aapt resource value: 0x7f0a0096
 			public const int media_actions = 2131361942;
@@ -2677,6 +2695,9 @@ namespace Zzz.Droid
 			
 			// aapt resource value: 0x7f0a009a
 			public const int right_side = 2131361946;
+			
+			// aapt resource value: 0x7f0a00ae
+			public const int sbNumberOfCharacters = 2131361966;
 			
 			// aapt resource value: 0x7f0a002e
 			public const int screen = 2131361838;
@@ -2795,8 +2816,8 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a0053
 			public const int textSpacerNoTitle = 2131361875;
 			
-			// aapt resource value: 0x7f0a00ae
-			public const int textView1 = 2131361966;
+			// aapt resource value: 0x7f0a00b6
+			public const int textView1 = 2131361974;
 			
 			// aapt resource value: 0x7f0a0080
 			public const int text_input_password_toggle = 2131361920;
@@ -2822,8 +2843,8 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a008d
 			public const int toolbar = 2131361933;
 			
-			// aapt resource value: 0x7f0a00af
-			public const int toolbar_title = 2131361967;
+			// aapt resource value: 0x7f0a00b7
+			public const int toolbar_title = 2131361975;
 			
 			// aapt resource value: 0x7f0a0020
 			public const int top = 2131361824;
@@ -2843,6 +2864,9 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a00a9
 			public const int txtAccessAddress = 2131361961;
 			
+			// aapt resource value: 0x7f0a00b3
+			public const int txtGeneratedPasswordPreview = 2131361971;
+			
 			// aapt resource value: 0x7f0a0083
 			public const int txtName = 2131361923;
 			
@@ -2861,8 +2885,8 @@ namespace Zzz.Droid
 			// aapt resource value: 0x7f0a0002
 			public const int view_offset_helper = 2131361794;
 			
-			// aapt resource value: 0x7f0a00b0
-			public const int visible = 2131361968;
+			// aapt resource value: 0x7f0a00b8
+			public const int visible = 2131361976;
 			
 			// aapt resource value: 0x7f0a0042
 			public const int withText = 2131361858;
@@ -3113,34 +3137,37 @@ namespace Zzz.Droid
 			public const int PasswordDetailView = 2130903102;
 			
 			// aapt resource value: 0x7f03003f
-			public const int PasswordOverviewView = 2130903103;
+			public const int PasswordGeneratorView = 2130903103;
 			
 			// aapt resource value: 0x7f030040
-			public const int SearchPassword = 2130903104;
+			public const int PasswordOverviewView = 2130903104;
 			
 			// aapt resource value: 0x7f030041
-			public const int select_dialog_item_material = 2130903105;
+			public const int SearchPassword = 2130903105;
 			
 			// aapt resource value: 0x7f030042
-			public const int select_dialog_multichoice_material = 2130903106;
+			public const int select_dialog_item_material = 2130903106;
 			
 			// aapt resource value: 0x7f030043
-			public const int select_dialog_singlechoice_material = 2130903107;
+			public const int select_dialog_multichoice_material = 2130903107;
 			
 			// aapt resource value: 0x7f030044
-			public const int SpinnerCloseTemplate = 2130903108;
+			public const int select_dialog_singlechoice_material = 2130903108;
 			
 			// aapt resource value: 0x7f030045
-			public const int SpinnerDropDownTemplate = 2130903109;
+			public const int SpinnerCloseTemplate = 2130903109;
 			
 			// aapt resource value: 0x7f030046
-			public const int SplashScreen = 2130903110;
+			public const int SpinnerDropDownTemplate = 2130903110;
 			
 			// aapt resource value: 0x7f030047
-			public const int support_simple_spinner_dropdown_item = 2130903111;
+			public const int SplashScreen = 2130903111;
 			
 			// aapt resource value: 0x7f030048
-			public const int toolbar = 2130903112;
+			public const int support_simple_spinner_dropdown_item = 2130903112;
+			
+			// aapt resource value: 0x7f030049
+			public const int toolbar = 2130903113;
 			
 			static Layout()
 			{

@@ -45,6 +45,7 @@
     <Compile Include="Contracts\ViewModels\IGroupOverviewViewModel.cs" />
     <Compile Include="Contracts\ViewModels\IMainViewModel.cs" />
     <Compile Include="Contracts\ViewModels\IPasswordDetailViewModel.cs" />
+    <Compile Include="Contracts\ViewModels\IPasswordGeneratorViewModel.cs" />
     <Compile Include="Contracts\ViewModels\IPasswordOverviewViewModel.cs" />
     <Compile Include="Contracts\ViewModels\ISearchPasswordViewModel.cs" />
     <Compile Include="Extensions\ListExtensions.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="ViewModels\GroupOverviewViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\MenuViewModel.cs" />
+    <Compile Include="ViewModels\PasswordGeneratorViewModel.cs" />
     <Compile Include="ViewModels\PasswordOverviewViewModel.cs" />
     <Compile Include="ViewModels\SearchPasswordViewModel.cs" />
     <Compile Include="ViewModels\PasswordDetailViewModel.cs" />

@@ -27,9 +27,10 @@ namespace Zzz.Core.ViewModels
             }
         }
 
-        public GroupOverviewViewModel(IMvxMessenger messenger) : base(messenger)
+        public GroupOverviewViewModel(IMvxMessenger messenger, IPasswordDataService passwordDataService) : base(messenger)
         {
-            _passwordDataService = new PasswordDataService(new PasswordRepository());
+            //_passwordDataService = new PasswordDataService(new PasswordRepository());
+            _passwordDataService = passwordDataService;
         }
 
         public void Init(bool reloadData = false)

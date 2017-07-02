@@ -182,6 +182,7 @@
     <Compile Include="Views\GroupOverviewFragment.cs" />
     <Compile Include="Views\MenuFragment.cs" />
     <Compile Include="Views\PasswordDetailFragment.cs" />
+    <Compile Include="Views\PasswordGeneratorFragment.cs" />
     <Compile Include="Views\PasswordOverviewFragment.cs" />
     <Compile Include="Views\SearchPasswordFragment.cs" />
   </ItemGroup>
@@ -222,6 +223,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\values\dimens.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\PasswordGeneratorView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

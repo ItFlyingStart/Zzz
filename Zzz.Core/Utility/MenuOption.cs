@@ -4,6 +4,7 @@
     {
         PasswordOverview = 0,
         GroupOverview,
+        PasswordGenerator,
         Settings
     }
 }

@@ -5,8 +5,6 @@ using MvvmCross.Core.ViewModels;
 using Zzz.Core.Contracts.Services;
 using Zzz.Core.Contracts.ViewModels;
 using Zzz.Core.Models;
-using Zzz.Core.Services.Data;
-using Zzz.Core.Repositories;
 using Zzz.Core.Extensions;
 
 namespace Zzz.Core.ViewModels
@@ -51,9 +49,10 @@ namespace Zzz.Core.ViewModels
             }
         }
 
-        public PasswordDetailViewModel(IMvxMessenger messenger) : base(messenger)
+        public PasswordDetailViewModel(IMvxMessenger messenger, IPasswordDataService passwordDataService) : base(messenger)
         {
-            _passwordDataService = new PasswordDataService(new PasswordRepository());
+            //_passwordDataService = new PasswordDataService(new PasswordRepository());
+            _passwordDataService = passwordDataService;
         }
 
         public void Init(string passwordId)

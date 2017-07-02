@@ -37,6 +37,14 @@ namespace Zzz.Core.ViewModels
                 Option = MenuOption.GroupOverview,
                 IsSelected = false
             });
+
+            MenuItems.Add(new MenuItem
+            {
+                Title = "Show password generator",
+                ViewModelType = typeof(PasswordGeneratorViewModel),
+                Option = MenuOption.PasswordGenerator,
+                IsSelected = false
+            });
         }
 
         private void OnMenuEntrySelect(MenuItem item)

@@ -40,10 +40,14 @@ namespace Zzz.Core.ViewModels
         //    _dialogService = dialogService;
         //}
 
-        public PasswordOverviewViewModel(IMvxMessenger messenger) : base(messenger)
+        public PasswordOverviewViewModel(IMvxMessenger messenger
+            , IPasswordDataService passwordDataService
+            , IConnectionService connectionService) : base(messenger)
         {
-            _passwordDataService = new PasswordDataService(new PasswordRepository());
-            _connectionService = new ConnectionService();
+            //_passwordDataService = new PasswordDataService(new PasswordRepository());
+            //_connectionService = new ConnectionService();
+            _passwordDataService = passwordDataService;
+            _connectionService = connectionService;
         }
 
         public void Init(bool reloadData = false)
