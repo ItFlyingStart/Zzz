@@ -17,5 +17,7 @@ namespace Zzz.Core.Contracts.Repositories
         Task<Group> GetGroupByName(string groupName);
 
         Task<Password> SavePassword(Password password);
+
+        Task<Group> SaveGroup(Group group);
     }
 }

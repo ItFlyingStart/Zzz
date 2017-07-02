@@ -44,5 +44,10 @@ namespace Zzz.Core.Services.Data
         {
             return await _passwordRepository.SavePassword(password);
         }
+
+        public async Task<Group> SaveGroup(Group group)
+        {
+            return await _passwordRepository.SaveGroup(group);
+        }
     }
 }

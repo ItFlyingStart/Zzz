@@ -79,10 +79,17 @@ namespace Zzz.Core.Repositories
 
         public void UpdateGroup(GroupOrm group)
         {
-            realm.Write(() =>
+            try
             {
-                realm.Add(group);
-            });
+                realm.Write(() =>
+                {
+                    realm.Add(group, true);
+                });
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         #endregion
 

@@ -70,5 +70,13 @@ namespace Zzz.Core.Repositories
 
             return await Task.FromResult(password);
         }
+
+        public async Task<Group> SaveGroup(Group group)
+        {
+            GroupOrm groupOrm = group.Map<Group, GroupOrm>();
+            dbHelper.UpdateGroup(groupOrm);
+
+            return await Task.FromResult(group);
+        }
     }
 }

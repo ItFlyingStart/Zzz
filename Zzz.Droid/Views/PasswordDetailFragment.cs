@@ -4,7 +4,6 @@ using Android.Views;
 using MvvmCross.Droid.Shared.Attributes;
 using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Droid.Support.V4;
-using MvvmCross.Binding.Droid.Views;
 using Zzz.Core.ViewModels;
 using Zzz.Core.Models;
 using Zzz.Droid.Activities;

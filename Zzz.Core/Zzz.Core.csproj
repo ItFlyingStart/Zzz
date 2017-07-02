@@ -41,6 +41,8 @@
     <Compile Include="Contracts\Services\IConnectionService.cs" />
     <Compile Include="Contracts\Services\IDialogService.cs" />
     <Compile Include="Contracts\Services\IPasswordDataService.cs" />
+    <Compile Include="Contracts\ViewModels\IGroupDetailViewModel.cs" />
+    <Compile Include="Contracts\ViewModels\IGroupOverviewViewModel.cs" />
     <Compile Include="Contracts\ViewModels\IMainViewModel.cs" />
     <Compile Include="Contracts\ViewModels\IPasswordDetailViewModel.cs" />
     <Compile Include="Contracts\ViewModels\IPasswordOverviewViewModel.cs" />
@@ -64,7 +66,10 @@
     <Compile Include="Utility\ResxTextProvider.cs" />
     <Compile Include="Utility\UrlConstants.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\GroupDetailViewModel.cs" />
+    <Compile Include="ViewModels\GroupOverviewViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\MenuViewModel.cs" />
     <Compile Include="ViewModels\PasswordOverviewViewModel.cs" />
     <Compile Include="ViewModels\SearchPasswordViewModel.cs" />
     <Compile Include="ViewModels\PasswordDetailViewModel.cs" />

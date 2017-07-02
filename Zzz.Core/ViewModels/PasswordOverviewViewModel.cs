@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Plugins.Messenger;
@@ -7,7 +6,6 @@ using Zzz.Core.Contracts.Services;
 using Zzz.Core.Contracts.ViewModels;
 using Zzz.Core.Extensions;
 using Zzz.Core.Models;
-using Zzz.Core.Models.App;
 using Zzz.Core.Services.General;
 using Zzz.Core.Services.Data;
 using Zzz.Core.Repositories;

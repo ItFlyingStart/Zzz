@@ -2,8 +2,8 @@
 {
     public enum MenuOption
     {
-        SearchPassword = 0,
-        SavedPasswords,
+        PasswordOverview = 0,
+        GroupOverview,
         Settings
     }
 }

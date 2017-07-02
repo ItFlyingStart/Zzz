@@ -178,6 +178,9 @@
     <Compile Include="Services\DialogService.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
+    <Compile Include="Views\GroupDetailFragment.cs" />
+    <Compile Include="Views\GroupOverviewFragment.cs" />
+    <Compile Include="Views\MenuFragment.cs" />
     <Compile Include="Views\PasswordDetailFragment.cs" />
     <Compile Include="Views\PasswordOverviewFragment.cs" />
     <Compile Include="Views\SearchPasswordFragment.cs" />
@@ -194,7 +197,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\SearchPassword.axml" />
-    <AndroidResource Include="Resources\layout\toolbar.axml" />
+    <AndroidResource Include="Resources\layout\toolbar.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\layout\PasswordDetailView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -202,6 +207,21 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\SpinnerCloseTemplate.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\GroupOverviewView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\GroupDetailView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_menu.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\item_menu.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\dimens.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -239,6 +259,9 @@
   <ItemGroup>
     <Content Include="FodyWeavers.xml" />
     <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\drawable\drawer_shadow_dark.9.png" />
+    <AndroidResource Include="Resources\drawable\drawer_shadow_light.9.png" />
+    <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable-hdpi\" />
